@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-sacle=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="imagenes\pizza fla.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rampart+One&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+   
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <title>Bien Chido Delivery</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="padre">
+        <header class="header">
+          <div class="menu margen-interno">
+            <div class="logo">
+              <a href="index.html"><img src="imagenes/logobc2.webp"></a></div>
+              <nav class="nav">
+                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span class="off"> Inicio</span></a>
+                <a href="Pizzas Y Empandas.html"><i class="fas fa-pizza-slice" aria-hidden="true"></i><span class="off"> Pizzas Y Empanadas</span></a>
+                <a href="Tacos.html"><i class="fa fa-pepper-hot" aria-hidden="true"></i><span class="off"> Tacos</span></a>
+                <a href="Promos.html"><i class="fa fa-utensils" aria-hidden="true"></i><span class="off"> Promos Chidas</span></a>
+                <a href="Hace tu pedido.html"><i class= "fa fa-check" aria-hidden="true"></i><span class="off"> Hace Tu Pedido</span></a>
+              </nav>
+            <div class="social">
+                <div><a href="https://www.facebook.com/bien.chido.31"><i class="fab fa-facebook" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+        </header>
+<body>
+          <form action=""target="">
+                <section class="section margen-interno">
+            <fieldset>
+                <h2>Tus Datos</h2>
+                <label for="name">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Dejanos tu nombre aqui ..."> <br> </br>
+                <label for="domicilio">Calle:</label>
+                    <input type="text" name="direccion" placeholder="A que direccion vamos?"> 
+                <label for="number">Altura:</label>
+                    <input type="text" name="altura" placeholder="Ingrese la altura"> <br></br> 
+                <label for="text">Entre Calle:</label>
+                    <input id="text" placeholder="Ingrese calle 1">
+                <label for="text">Y Calle:</label>
+                    <input id="text" placeholder="Ingrese calle 2"> <br></br>
+                <label for="number">Piso:</label>
+                    <input id="number" placeholder="Ingrese número de piso">
+                <label for="text">Departamento:</label>
+                    <input id="text" placeholder="Ingrese su dpto"> <br></br>
+                <label> Teléfono
+                    <input type="tel" placeholder="Dejanos tu número"></label>
+                <label> Correo Electrónico
+                     <input type="email" placeholder="Dejanos tu correo"></label> <br></br>
+                
+                </section>
+                </div>
+            </fieldset>
+            <section class="section margen-interno">
+            <fieldset>
+                <h2>Tu pedido</h2>
+                    <div class="icono-comida">
+                        <img src="imagenes\entrega-de-pizza.png">
+                    </div>
+                    <p>Recorda que te lo llevamos de Miercoles a Domingos de 19:15 a 23:30hs. Si tenes consultas atendemos hasta las 00:00hs</p><br>
+                    
+                    <input type="date" name="dias">
+                    <input type="time" name="hora" value="19:00:00" value="23:35:00"  min="19:15:00" max="23:30:00"><br>
+                    
+                </div>  
+            </fieldset>
+            </section>
+        
+        <div id="contenedor">
+        <div><br>
+        <p>
+            <form><br>
+                <h5>Pizzas</h5><br>
+                        <h3>
+                            <div>
+                                    <input type="select" name="gender" value="Muzarrella" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Jamón Y Morrones" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            <div>
+                                    <input type="select" name="gender" value="Anchoas" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Napolitana" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Roquefort" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Palmitos" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Rúcula" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Calabreza" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Fugarella" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Bien Chido" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Salchichas" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                        </h3>
+                    
+                        <h5>Empanadas</h5><br>
+                        <h3>
+                            <div>
+                                    <input type="select" name="gender" value="Carne cortada a Cuchillo" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Carne Picante" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            <div>
+                                    <input type="select" name="gender" value="Pollo" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Jamón Y Queso" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Humita" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            <div>
+                                    <input type="select" name="gender" value="Roquefort" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Capresse" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Atún" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            <div>
+                                    <input type="select" name="gender" value="Jamón Crudo" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Queso Y Cebolla" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            </div>
+                            <div>
+                                    <input type="select" name="gender" value="Salchichas" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                            <div>
+                                    <input type="select" name="gender" value="Pollo a la Mostaza" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                            </div>
+    
+                        </h3>
+
+                         <h5>Tacos</h5><br>
+                        <h3>
+                                <div>
+                                        <input type="select" name="gender" value="Carne" checked>
+                                        <label for="number">Cantidad</label>
+                                        <select name="Cantidad" id="number">
+                                            <option value="--">--</option>
+                                            <option value="para 2 personas">Tacos para 2</option>
+                                            <option value="para 4 personas">Tacos para 4</option>
+                                            <option value="para 6 personas">Tacos para 6</option>
+                                        </select>
+                                </div>
+                                <div>
+                                        <input type="select" name="gender" value="Cerdo" checked>
+                                        <label for="number">Cantidad</label>
+                                        <select name="Cantidad" id="number">
+                                            <option value="--">--</option>
+                                            <option value="para 2 personas">Tacos para 2</option>
+                                            <option value="para 4 personas">Tacos para 4</option>
+                                            <option value="para 6 personas">Tacos para 6</option>
+                                        </select>
+                                <div>
+                                         <input type="select" name="gender" value="Vegetariano" checked>
+                                        <label for="number">Cantidad</label>
+                                        <select name="Cantidad" id="number">
+                                            <option value="--">--</option>
+                                            <option value="para 2 personas">Tacos para 2</option>
+                                            <option value="para 4 personas">Tacos para 4</option>
+                                            <option value="para 6 personas">Tacos para 6</option>
+                                        </select>
+                                              
+                                </div>
+                        </h3>
+                </form>
+       
+    </p>
+</div>
+
+    <div>
+        <p>
+             
+                <form>
+                            
+                        <br>
+                        <h5>Salsas</h5><br>
+                        <h3>
+                                <div>
+                                    <input type="select" name="gender" value="Creme Cheese" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Barbacoa" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                <div>
+                                    <input type="select" name="gender" value="Alioli" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Salsa Picante" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Guacamole" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                <div>
+                                    <input type="select" name="gender" value="Frijoles Refritos" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Salsa Pico de Gallo" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+                        </h3>
+                
+                        <h5>Quesadillas</h5><br>
+                        <h3>
+                                <div>
+                                    <input type="select" name="gender" value="Champiñones" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Chorizo" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                <div>
+                                    <input type="select" name="gender" value="Jamón Y Queso" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+    
+                                <div>
+                                    <input type="select" name="gender" value="Salchichas" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+                        </h3>
+                 
+                        <h5>Promo Chidas</h5><br>
+                        <h3>
+                                <div>
+                                    <input type="select" name="gender" value="Pomo 1" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Promo 2" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                <div>
+                                    <input type="select" name="gender" value="Promo 3" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+    
+                        </h3>
+                 
+                        <h5>Bebidas</h5><br>
+                        <h3>
+                                <div>
+                                    <input type="select" name="gender" value="Corona 710ml" checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                </div>
+                                <div>
+                                    <input type="select" name="gender" value="Coco Cola 2.25lt." checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">
+                                <div>
+                                    <input type="select" name="gender" value="Cerveza 1 lt." checked>
+                                    <label for="number">Cantidad</label>
+                                    <input id="number">       
+                                </div>
+    
+                        </h3>
+                   
+                </form>
+        </p>
+</div>
+</div>
+</div>
+    <fieldset>
+            <div>
+                <label for="message">Mensajes</label>
+                <textarea name="" id="message" cols="70" rows="10"></textarea>
+            </div>
+        <div class="boton">
+            <input type="reset" value="Restablecer"></button>
+        </div>
+        <div class="boton">
+            <button type="button" class="">Enviar Pedido</button>
+        </div>
+    </fieldset> <br>  
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="Pizzas Y Empandas.html">Pizzas Y Empanadas</a>
+            <a href="Tacos.html">Tacos</a>
+            <a href="Promos.html">Promos Chidas</a>
+            <a href="Hace tu pedido.html">Hace Tu Pedido</a>
+          </nav>
+        </div>
+   
+
+
+      <footer class="footer margen-interno ">
+        <nav class="pie">  
+          <a href="index.html"> Copyright &copy; 2012-2022 BienChido - Todos los derechos Reservados</a>
+        </nav>
+    </div>
+</body>
+</html>
