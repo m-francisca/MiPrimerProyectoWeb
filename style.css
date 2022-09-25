@@ -21,7 +21,7 @@ a{
     padding: 0 50px;
 }
     .header{
-        background-image: url(".imagenes\fondonachos.jpg");
+        background-image:url(imagenes/fondonachos.jpg);
         background-attachment: contain;
         background-size: cover; /*contain se adapta al contenedor* cover se adapta al dispositivo aunque haga zoom*/
         display: flex;
@@ -44,11 +44,8 @@ a{
                 margin-top: 5px;
                 margin-inline-end: 5px;
                 padding: 5px;
-               
-                                  
-            
+
         }
-             
                 
                 .logo a:hover{
                     color: #343434;
