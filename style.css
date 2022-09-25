@@ -21,9 +21,9 @@ a{
     padding: 0 50px;
 }
     .header{
-        background-image: url(imagenes\fondonachos.jpg);
+        background-image: url(".imagenes\fondonachos.jpg");
         background-attachment: contain;
-        background-size: cover;
+        background-size: cover; /*contain se adapta al contenedor* cover se adapta al dispositivo aunque haga zoom*/
         display: flex;
         flex-flow: column nowrap;
         ;
@@ -41,9 +41,9 @@ a{
             .logo{
                 color: white;
                 width: 100px;
-                margin-top: 10px;
-                margin-inline-end: 10px;
-                padding: 10px;
+                margin-top: 5px;
+                margin-inline-end: 5px;
+                padding: 5px;
                
                                   
             
@@ -318,12 +318,6 @@ input, select {
     .nav a {
         font-size: 25px;
     }
-    .lista-precios{
-        font-size: 10px;
-        letter-spacing: 8px;
-
-    }
-   
     
 }
 
