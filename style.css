@@ -150,7 +150,8 @@ a{
 
             h5{
                 color: #000;
-                font-size: 18px;
+                font-size: 20px;
+                font-style: italic;
                 padding: 50px 0;
                 margin-top: -80px;
                 text-align: center;
@@ -220,8 +221,12 @@ a{
 
       
 .icono-comida{
-    width: 60px;
+   width: 60px;
     height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     
 }
 img{
@@ -233,7 +238,7 @@ img{
     height: 800x;
 }
 
-#contenedor {
+*#contenedor {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -245,31 +250,69 @@ img{
     width: 50%;
 }
 
-
+/*
 .lista-precios{
-    text-align: center;
-    letter-spacing: 2px;
+    /*text-align: center;*/
+   /* letter-spacing: 2px;
     list-style: none;
     padding: 0;
     margin:0;
+    margin-left: auto;
+    margin-right: auto;
 
+}*/
+.lista-precios p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    width: 90%;
+    padding: 0px;
+   max-width: 500px;
+    
 }
-
+span{
+    text-align: center;
+}
+.sabor{
+    text-align: left;
+    width: 75%;
+    margin-left: 200px;
+}
+.precio{
+    text-align: right;
+    width: 25%;
+    margin-right: 5%;
+}
 /*formulario*/
 
 
 input, select {
     width : 180px;
-    padding: 0;
-    margin: 0;
+    padding: 3px;
+    margin: 3px;
     box-sizing: border-box;
+    text-align: center;
+    
   }
+ fieldset{
+    background-color: burlywood;
+    border-color: burlywood;
+    text-align: center;
+    
+ }
+ hr{
+    background-color: brown;
+    border-color: brown;
+    height: 2px;
+
+ }
 
   .boton {
    
    font-family: 'Courier New', Courier, monospace;
-   padding: 10px 10px;
-   display: inline-block;
+   padding: 0px 0px;
+   /*display: inline-block;*/
    text-align: center;
    border:10px solid bisque;
   

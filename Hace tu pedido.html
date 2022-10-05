@@ -43,9 +43,10 @@
         </header>
 <body>
           <form action=""target="">
+            
                 <section class="section margen-interno">
-            <fieldset>
-                <h2>Tus Datos</h2>
+            <fieldset><legend><h4> Tus Datos</h4></legend><br>
+                
                 <label for="name">Nombre:</label>
                     <input type="text" name="nombre" placeholder="Dejanos tu nombre aqui ..."> <br> </br>
                 <label for="domicilio">Calle:</label>
@@ -68,24 +69,29 @@
                 </section>
                 </div>
             </fieldset>
+            <hr>
             <section class="section margen-interno">
-            <fieldset>
-                <h2>Tu pedido</h2>
-                    <div class="icono-comida">
+                <div class="pedido">
+            <fieldset><legend><h4>Tu pedido</h4></legend>
+                
+                    <div class="icono-comida"><br>
                         <img src="imagenes\entrega-de-pizza.png">
-                    </div>
+                    </div><br>
                     <p>Recorda que te lo llevamos de Miercoles a Domingos de 19:15 a 23:30hs. Si tenes consultas atendemos hasta las 00:00hs</p><br>
                     
                     <input type="date" name="dias">
                     <input type="time" name="hora" value="19:00:00" value="23:35:00"  min="19:15:00" max="23:30:00"><br>
                     
-                </div>  
+                </div>
+             </div> 
             </fieldset>
             </section>
+            <hr>
         
-        <div id="contenedor">
         <div><br>
-        <p>
+        <section class="section margen-interno">
+        <fieldset><legend><h4>Menu</h4></legend><br>
+       
             <form><br>
                 <h5>Pizzas</h5><br>
                         <h3>
@@ -239,133 +245,141 @@
                                               
                                 </div>
                         </h3>
-                </form>
-       
-    </p>
-</div>
-
-    <div>
-        <p>
-             
-                <form>
-                            
-                        <br>
-                        <h5>Salsas</h5><br>
+           
+                 <h5>Salsas</h5><br>
                         <h3>
-                                <div>
-                                    <input type="select" name="gender" value="Creme Cheese" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Barbacoa" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                <div>
-                                    <input type="select" name="gender" value="Alioli" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Salsa Picante" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Guacamole" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                <div>
-                                    <input type="select" name="gender" value="Frijoles Refritos" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Salsa Pico de Gallo" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
+                            <div>
+                                <input type="select" name="gender" value="Creme Cheese" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">   
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Barbacoa" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Alioli" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Salsa Picante" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Guacamole" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Frijoles Refritos" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Salsa Pico de Gallo" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
                         </h3>
                 
-                        <h5>Quesadillas</h5><br>
+                    <h5>Quesadillas</h5><br>
                         <h3>
-                                <div>
-                                    <input type="select" name="gender" value="Champiñones" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Chorizo" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                <div>
-                                    <input type="select" name="gender" value="Jamón Y Queso" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
+                            <div>
+                                <input type="select" name="gender" value="Champiñones" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Chorizo" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Jamón Y Queso" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
     
-                                <div>
-                                    <input type="select" name="gender" value="Salchichas" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
+                            <div>
+                                <input type="select" name="gender" value="Salchichas" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
                         </h3>
                  
-                        <h5>Promo Chidas</h5><br>
+                    <h5>Promo Chidas</h5><br>
                         <h3>
-                                <div>
-                                    <input type="select" name="gender" value="Pomo 1" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Promo 2" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                <div>
-                                    <input type="select" name="gender" value="Promo 3" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
+                            <div>
+                                <input type="select" name="gender" value="Pomo 1" checked>
+                                 <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Promo 2" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Promo 3" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Promo 4" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
     
                         </h3>
                  
-                        <h5>Bebidas</h5><br>
+                    <h5>Bebidas</h5><br>
                         <h3>
-                                <div>
-                                    <input type="select" name="gender" value="Corona 710ml" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                </div>
-                                <div>
-                                    <input type="select" name="gender" value="Coco Cola 2.25lt." checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                                <div>
-                                    <input type="select" name="gender" value="Cerveza 1 lt." checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                                </div>
+                            <div>
+                                <input type="select" name="gender" value="Corona 710ml" checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Coco Cola 2.25lt." checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">
+                            </div>
+                            <div>
+                                <input type="select" name="gender" value="Cerveza 1 lt." checked>
+                                <label for="number">Cantidad</label>
+                                <input id="number">       
+                            </div>
     
                         </h3>
                    
-                </form>
-        </p>
+            </form>
+             
+        </fieldset>    
+    
 </div>
 </div>
 </div>
-    <fieldset>
+<hr>
+    <section class="section margen-interno">
+    <fieldset><legend><h4>Mensajes</h4></legend>
             <div>
-                <label for="message">Mensajes</label>
+                <label for="message"></label>
                 <textarea name="" id="message" cols="70" rows="10"></textarea>
             </div>
+    </fieldset>
+    </section>
+    <section>
         <div class="boton">
             <input type="reset" value="Restablecer"></button>
         </div>
         <div class="boton">
             <button type="button" class="">Enviar Pedido</button>
         </div>
-    </fieldset> <br>  
+    </section>
+    
         <nav class="navegacion">
             <a href="index.html">Inicio</a>
             <a href="Pizzas Y Empanadas.html">Pizzas Y Empanadas</a>
