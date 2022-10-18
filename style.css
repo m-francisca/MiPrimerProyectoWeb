@@ -379,7 +379,7 @@ label{
         flex-direction: column;
         text-align: center;
     }
-
+   
 }
 
 @media all and (max-width: 480px){
@@ -394,5 +394,5 @@ label{
     max-width: 100% !important;
     overflow-x: hidden !important;
    
+    
 }
-
