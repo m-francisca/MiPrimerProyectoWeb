@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-sacle=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" href="imagenes\pizza fla.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    
     <title>Bien Chido Delivery</title>
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>
-  <header>
     <div class="padre">
         <header class="header">
           <div class="menu margen-interno">
@@ -40,36 +41,37 @@
                 <div><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div>
             </div>
           </div>
+        
         </header>
-<body>
-          <form action=""target="">
-            
-                <section class="section margen-interno">
+        <main>
+        
+          <form action="" id="form">
+            <section class="section margen-interno">
+                <div class="datos">
             <fieldset><legend><h4> Tus Datos</h4></legend><br>
-                
-                <label for="name">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Dejanos tu nombre aqui ..."> <br> </br>
+                <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Dejanos tu nombre" required>
+                <label for="password">Contraseña:</label>
+                    <input id="password" type="password" name="password" placeholder="Ingresa tu contraseña" required>
                 <label for="domicilio">Calle:</label>
-                    <input type="text" name="direccion" placeholder="A que direccion vamos?"> 
-                <label for="number">Altura:</label>
-                    <input type="text" name="altura" placeholder="Ingrese la altura"> <br></br> 
-                <label for="text">Entre Calle:</label>
-                    <input id="text" placeholder="Ingrese calle 1">
-                <label for="text">Y Calle:</label>
-                    <input id="text" placeholder="Ingrese calle 2"> <br></br>
-                <label for="number">Piso:</label>
-                    <input id="number" placeholder="Ingrese número de piso">
-                <label for="text">Departamento:</label>
-                    <input id="text" placeholder="Ingrese su dpto"> <br></br>
-                <label> Teléfono
-                    <input type="tel" placeholder="Dejanos tu número"></label>
-                <label> Correo Electrónico
-                     <input type="email" placeholder="Dejanos tu correo"></label> <br></br>
+                    <input id="domicilio" type="text" name="domicilio" placeholder="A que direccion vamos?" required>
+                <label for="altura">Altura:</label>
+                    <input id="altura" type="text" name="altura" placeholder="Ingrese la altura" required> <br>
+                <label for="piso">Piso:</label>
+                    <input id="piso" type="number" name="piso" placeholder="Ingrese número de piso">
+                <label for="dpto">Departamento: </label>
+                    <input id="dpto" type="text" name="dpto" placeholder="Ingrese su dpto" >
+                <label for="tel"> Teléfono:</label>
+                    <input id="tel" type="tel" name="telefono" placeholder="Dejanos tu número"required><br>
+                <label for="email"> Correo Electrónico: </label> 
+                     <input id="email" type="email" namde="email" placeholder="Dejanos tu correo" required>
                 
-                </section>
                 </div>
+       
             </fieldset>
-            <hr>
+        </section>
+        
+        
             <section class="section margen-interno">
                 <div class="pedido">
             <fieldset><legend><h4>Tu pedido</h4></legend>
@@ -77,308 +79,997 @@
                     <div class="icono-comida"><br>
                         <img src="imagenes\entrega-de-pizza.png">
                     </div><br>
-                    <p>Recorda que te lo llevamos de Miercoles a Domingos de 19:15 a 23:30hs. Si tenes consultas atendemos hasta las 00:00hs</p><br>
+                    <p>Recorda que te lo llevamos de Miercoles a Domingos de 19:15 a 23:30hs.<br>Si tenes consultas atendemos hasta las 00:00hs</p><br>
                     
                     <input type="date" name="dias">
                     <input type="time" name="hora" value="19:00:00" value="23:35:00"  min="19:15:00" max="23:30:00"><br>
                     
                 </div>
-             </div> 
+       
+      
             </fieldset>
             </section>
-            <hr>
+            
         
         <div><br>
+      
         <section class="section margen-interno">
+            <div class="menu-comida">
         <fieldset><legend><h4>Menu</h4></legend><br>
-       
-            <form><br>
+            <br>
                 <h5>Pizzas</h5><br>
                         <h3>
                             <div>
-                                    <input type="select" name="gender" value="Muzarrella" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
+                                
+                            <input type="select" name="sabor" value="Muzarrella" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
+
+                            <div>
+                                <input type="select" name="sabor" value="Jamón Y Morrones" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
+                           <div>
+                                <input type="select" name="sabor" value="Anchoas" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Jamón Y Morrones" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                            <div>
-                                    <input type="select" name="gender" value="Anchoas" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Napolitana" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Napolitana" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Roquefort" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Roquefort" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Palmitos" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Palmitos" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Rúcula" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Rúcula" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Calabreza" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
+                           <div>
+                                <input type="select" name="sabor" value="Fugarella" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Calabreza" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Bien Chido" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Fugarella" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                            </div>
-                            <div>
-                                    <input type="select" name="gender" value="Bien Chido" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
-                            </div>
-                            <div>
-                                    <input type="select" name="gender" value="Salchichas" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Salchichas" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                         </h3>
                     
                         <h5>Empanadas</h5><br>
                         <h3>
                             <div>
-                                    <input type="select" name="gender" value="Carne cortada a Cuchillo" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
+                                <input type="select" name="sabor" value="Carne a cuchillo" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Carne Picante" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                            <div>
-                                    <input type="select" name="gender" value="Pollo" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Carne picante" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Jamón Y Queso" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
+                                <input type="select" name="sabor" value="Pollo" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Humita" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                            <div>
-                                    <input type="select" name="gender" value="Roquefort" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Jamón y Queso" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Capresse" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
+                                <input type="select" name="sabor" value="Humita" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Atún" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                            <div>
-                                    <input type="select" name="gender" value="Jamón Crudo" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Roquefort" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Queso Y Cebolla" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
+                                <input type="select" name="sabor" value="Capresse" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
                             <div>
-                                    <input type="select" name="gender" value="Salchichas" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">
-                            <div>
-                                    <input type="select" name="gender" value="Pollo a la Mostaza" checked>
-                                    <label for="number">Cantidad</label>
-                                    <input id="number">       
+                                <input type="select" name="sabor" value="Atún" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
                             </div>
-    
+                            <div>
+                                <input type="select" name="sabor" value="Jamón Crudo" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Queso Y Cebolla" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Salchichas" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Pollo a la mostaza" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select> 
+                            </div>
                         </h3>
 
                          <h5>Tacos</h5><br>
-                        <h3>
+                            <h3>
                                 <div>
-                                        <input type="select" name="gender" value="Carne" checked>
-                                        <label for="number">Cantidad</label>
-                                        <select name="Cantidad" id="number">
-                                            <option value="--">--</option>
-                                            <option value="para 2 personas">Tacos para 2</option>
-                                            <option value="para 4 personas">Tacos para 4</option>
-                                            <option value="para 6 personas">Tacos para 6</option>
-                                        </select>
+                                    <input type="select" name="sabor" value="Carne para 2" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
                                 </div>
                                 <div>
-                                        <input type="select" name="gender" value="Cerdo" checked>
-                                        <label for="number">Cantidad</label>
-                                        <select name="Cantidad" id="number">
-                                            <option value="--">--</option>
-                                            <option value="para 2 personas">Tacos para 2</option>
-                                            <option value="para 4 personas">Tacos para 4</option>
-                                            <option value="para 6 personas">Tacos para 6</option>
-                                        </select>
-                                <div>
-                                         <input type="select" name="gender" value="Vegetariano" checked>
-                                        <label for="number">Cantidad</label>
-                                        <select name="Cantidad" id="number">
-                                            <option value="--">--</option>
-                                            <option value="para 2 personas">Tacos para 2</option>
-                                            <option value="para 4 personas">Tacos para 4</option>
-                                            <option value="para 6 personas">Tacos para 6</option>
-                                        </select>
-                                              
+                                    <input type="select" name="sabor" value="Carne para 4" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
                                 </div>
-                        </h3>
-           
+                                <div>
+                                    <input type="select" name="sabor" value="Carne para 6" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Pollo para 2" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Pollo para 4" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Pollo para 6" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Cerdo para 2" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Cerdo para 4" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Cerdo para 6" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Vegetariano para 2" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Vegetariano para 4" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Vegetariano para 6" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                   </select> 
+                                </div>
+                            </h3>
                  <h5>Salsas</h5><br>
                         <h3>
                             <div>
-                                <input type="select" name="gender" value="Creme Cheese" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">   
+                                <input type="select" name="sabor" value="Creme Cheese" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Barbacoa" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Barbacoa" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Alioli" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Alioli" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Salsa Picante" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Salsa Picante" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Guacamole" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Guacamole" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Frijoles Refritos" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Frijoles Refritos" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Salsa Pico de Gallo" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Salsa Pico de Gallo" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                         </h3>
                 
                     <h5>Quesadillas</h5><br>
                         <h3>
                             <div>
-                                <input type="select" name="gender" value="Champiñones" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Champiñones" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Chorizo" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Chorizo" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Jamón Y Queso" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Jamón Y Queso" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
-    
                             <div>
-                                <input type="select" name="gender" value="Salchichas" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Salchichas" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                         </h3>
                  
                     <h5>Promo Chidas</h5><br>
                         <h3>
                             <div>
-                                <input type="select" name="gender" value="Pomo 1" checked>
-                                 <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Promo 1.1" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Promo 2" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
+                                <input type="select" name="sabor" value="Promo 1.2" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Promo 3" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Promo 2.1" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
                             <div>
-                                <input type="select" name="gender" value="Promo 4" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
+                                <input type="select" name="sabor" value="Promo 2.2" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
                             </div>
-    
+                            <div>
+                                <input type="select" name="sabor" value="Promo 3.1" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Promo 3.2" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Promo 4.1" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Promo 4.2" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
+                            </div>
+                            <div>
+                                <input type="select" name="sabor" value="Promo 4.3" checked>
+                               <label for="cantidad"></label>
+                               <select name="cantidad" id="cantidad">
+                                   <option value="--"></option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                               </select>        
+                            </div>
                         </h3>
                  
                     <h5>Bebidas</h5><br>
                         <h3>
-                            <div>
-                                <input type="select" name="gender" value="Corona 710ml" checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
-                            </div>
-                            <div>
-                                <input type="select" name="gender" value="Coco Cola 2.25lt." checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">
-                            </div>
-                            <div>
-                                <input type="select" name="gender" value="Cerveza 1 lt." checked>
-                                <label for="number">Cantidad</label>
-                                <input id="number">       
-                            </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Corona 710ml" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                   </select>        
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Coca Cola 2.25lts" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                   </select>        
+                                </div>
+                                <div>
+                                    <input type="select" name="sabor" value="Cerveza 1lt" checked>
+                                   <label for="cantidad"></label>
+                                   <select name="cantidad" id="cantidad">
+                                       <option value="--"></option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                   </select>        
+                                </div>
     
                         </h3>
                    
-            </form>
-             
+           
+
         </fieldset>    
     
 </div>
 </div>
-</div>
-<hr>
     <section class="section margen-interno">
+        <div class="textarea">
     <fieldset><legend><h4>Mensajes</h4></legend>
-            <div>
+            
                 <label for="message"></label>
-                <textarea name="" id="message" cols="70" rows="10"></textarea>
-            </div>
+                <textarea name="message" id="message" cols="50" rows="6" placeholder="Dejanos indicaciones de entrega, o sugerencias ..."></textarea>
+           
+        </div>
     </fieldset>
     </section>
     <section>
         <div class="boton">
-            <input type="reset" value="Restablecer"></button>
+            <input type="reset" value="Restaurar">
         </div>
-        <div class="boton">
-            <button type="button" class="">Enviar Pedido</button>
+         <div class="boton">
+            <input type="submit" onclick= 'return enviarPedido();' value= 'Enviar Pedido'>
         </div>
+    </form>
+    <div id = 'error'></div>
+
+    <script src="app.js"></script>
     </section>
+    
     
         <nav class="navegacion">
             <a href="index.html">Inicio</a>
@@ -389,12 +1080,13 @@
           </nav>
         </div>
    
-
+    </main>
 
       <footer class="footer margen-interno ">
         <nav class="pie">  
           <a href="index.html"> Copyright &copy; 2012-2022 BienChido - Todos los derechos Reservados</a>
         </nav>
     </div>
+
 </body>
 </html>

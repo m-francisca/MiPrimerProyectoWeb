@@ -87,11 +87,10 @@ a{
            
         }
 
-
             h1{
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 18px;
-                color: white;
+                color: whitesmoke;
                 text-shadow: 0.08em 0.08em brown ;
                 font-weight: 300;
                 text-align: center;
@@ -101,31 +100,40 @@ a{
 
     .section{
         background: bisque;
-        display:flex;
-        min-height: 50px;
-        margin: 0.5rem;
+        display: flex;
+        /*min-height: 80px;
+        margin: 10px 10px 0 0px;*/
 
     }
         .articulos{
-            background: bisque;
+            background: beige;
             flex: 2 1 auto;
-            flex-flow: column nowrap;
+            display: flex;/*AGREGE ACA*/
+            flex-flow: row wrap;
         }
             .article{
                 flex: 1 1 40%;
                 color: black;
                 font-size: 13px;
-                letter-spacing: 1px;
-                margin: 10px 10px 0 0px;
-                flex: 1 1 45%;
+                letter-spacing: 2px;
+                margin: 20px 10px 30px 10px;
                 background: bisque;
 
             }
              .article img{
                 width: 100%;
+                
             }
             
+            p{
+                font-size: 18px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                color: brown;
+                font-style: italic;
+            }
 
+            
             h2{
                 font-size: 25px;
                 text-transform: uppercase;
@@ -144,13 +152,14 @@ a{
             h4{
                 background: brown;
                 color:#fff;
-                padding: 5px;
-                text-transform: unset
+                padding: 2px;
+                text-transform: unset;
+                font-size: 17px;
             }
 
             h5{
                 color: #000;
-                font-size: 20px;
+                font-size: 15px;
                 font-style: italic;
                 padding: 50px 0;
                 margin-top: -80px;
@@ -159,11 +168,11 @@ a{
                
             }
 
-
-
             .navegacion{
                 background: brown;
-                flex:1 1 100%;
+                flex: 1 1 100%;
+                margin: 10px 0px 0 0px;
+               
 
             }
             .navegacion a{
@@ -172,33 +181,21 @@ a{
                 text-transform: uppercase;
                 padding: 0 10px;
                 letter-spacing: 2px;
-
+               
             }
+
         .aside{
-           background: bisque;
+            background: bisque;
             flex: 1 1 auto;
-            margin: 10px 5px 10px 0;
-            min-width: 30%;
-            float: left;
-            width: auto;
-            min-height: 180px;
-            
-            
-        }
-
-
-            .aside img{
-            width: 50%;
-          
-        
+            margin: 10px 5px 10px 10px;
+      
         }
         
-
             .sucursal{
                 background: bisque;
+            
         }
-
-
+            
     .footer{
         background: brown;
         display: flex;
@@ -208,7 +205,6 @@ a{
         .pie{
         
             width: 300px;
-          
             
         }
         .pie a{
@@ -221,12 +217,11 @@ a{
 
       
 .icono-comida{
-   width: 60px;
+    width: 60px;
     height: 60px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     
 }
 img{
@@ -237,7 +232,7 @@ img{
     width: 800px;
     height: 800x;
 }
-
+/*
 *#contenedor {
     display: flex;
     flex-direction: row;
@@ -248,19 +243,8 @@ img{
   
   #contenedor > div {
     width: 50%;
-}
-
-/*
-.lista-precios{
-    /*text-align: center;*/
-   /* letter-spacing: 2px;
-    list-style: none;
-    padding: 0;
-    margin:0;
-    margin-left: auto;
-    margin-right: auto;
-
 }*/
+
 .lista-precios p{
     display: inline-block;
     margin-top: 5px;
@@ -271,9 +255,10 @@ img{
    max-width: 500px;
     
 }
-span{
+.ingredientes{
     text-align: center;
 }
+
 .sabor{
     text-align: left;
     width: 75%;
@@ -284,17 +269,55 @@ span{
     width: 25%;
     margin-right: 5%;
 }
+
+
 /*formulario*/
 
 
-input, select {
-    width : 180px;
-    padding: 3px;
-    margin: 3px;
-    box-sizing: border-box;
-    text-align: center;
+form{
+    width: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+
+}
+
+
+label{
+    display: inline-block;
+    width: 200px;
+
+}
+
+
+.menu-comida, .textarea,.pedido, .datos{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    width: 90%;
+    padding: 0px;
+    max-width: 500px;
+    min-width: 300px;
+    padding-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
     
   }
+  
+ select, input {
+    width: auto;
+    padding: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+  
+
  fieldset{
     background-color: burlywood;
     border-color: burlywood;
@@ -305,17 +328,13 @@ input, select {
     background-color: brown;
     border-color: brown;
     height: 2px;
-
  }
 
   .boton {
-   
    font-family: 'Courier New', Courier, monospace;
    padding: 0px 0px;
-   /*display: inline-block;*/
    text-align: center;
-   border:10px solid bisque;
-  
+   border: 10px solid bisque;
   
 }
 .boton :hover{
@@ -340,9 +359,6 @@ input, select {
         font-size: 12px;
        
     }
-   /* .texto-principal{
-        height: 450px;
-    }*/
 }
 @media all and (max-width: 768px){
     .articulos{
@@ -352,20 +368,21 @@ input, select {
         height: 450px;
       
     }
+    
 }
 @media all and (max-width:650px) {
     .off {display: none; }
     .nav a {
         font-size: 25px;
     }
-    
 }
+    
 
 @media all and (max-width: 480px){
     .aside{
         flex-direction: column;
         font-size: 12px;
-    }
-   
-    
+    } 
+ 
+  
 }
