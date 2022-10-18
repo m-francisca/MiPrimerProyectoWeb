@@ -249,17 +249,18 @@ img{
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
+   
     font-size: 15px;
     width: 90%;
     padding: 0px;
-   max-width: 500px;
+    max-width: 500px;
     
 }
 .ingredientes{
     text-align: center;
 }
 
-.sabor{
+.variedad{
     text-align: left;
     width: 75%;
     margin-left: 200px;
@@ -379,7 +380,7 @@ label{
         flex-direction: column;
         text-align: center;
     }
-   
+ 
 }
 
 @media all and (max-width: 480px){
@@ -387,7 +388,15 @@ label{
         flex-direction: column;
         font-size: 12px;
     } 
-   
+    
+    .lista-precios{
+    
+        margin-right: 50px;
+ 
+     }
+     .variedad{
+         margin-left: 50px;
+     }
 
 } 
     html, body {
