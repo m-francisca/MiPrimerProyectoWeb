@@ -1,17 +1,14 @@
-var nombre = document.getElementById('nombre');
+var name = document.getElementById('nombre');
 var password = document.getElementById('password');
 var domicilio = document.getElementById('domicilio');
 var error = document.getElementById('error');
-
-
-
 
 function enviarPedido(){
     console.log('Enviando pedido...'); 
 
      var mensajesError = [];
 
-    if(nombre.value === null || nombre.value === ''){
+    if(name.value === null || name.value === ''){
     
         alert('[ERROR] El campo nombre debe tener un valor...');
 
@@ -31,4 +28,3 @@ function enviarPedido(){
 
     return false;
 }
-
