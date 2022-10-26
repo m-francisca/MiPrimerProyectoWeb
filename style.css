@@ -84,18 +84,20 @@ a{
                     color: #343434
                 }
 
+
         .texto-principal{
-            height: 580px;
+            height: 280px;
             display: flex;
             align-items: center;
-           
+            margin-left: 700px;
         }
+
 
             h1{
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 18px;
-                color: whitesmoke;
-                text-shadow: 0.08em 0.08em brown ;
+                color: orangered;
+                text-shadow: 0.08em 0.08em whitesmoke;
                 font-weight: 300;
                 text-align: center;
                 line-height: 1.6;
@@ -133,7 +135,7 @@ a{
                 font-size: 18px;
                 font-family:Georgia, 'Times New Roman', Times, serif;
                 text-align: center;
-                color: brown;
+                color: black;
                 font-style: italic;
             }
 
@@ -379,6 +381,9 @@ label{
     .contenedor{
         flex-direction: column;
         text-align: center;
+    }
+    .texto-principal{
+        margin-left: 2px;
     }
  
 }
