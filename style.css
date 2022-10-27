@@ -362,17 +362,18 @@ label{
         font-size: 12px;
        
     }
+    .texto-principal{
+        margin-left: 2px;
+    }
 }
 @media all and (max-width: 768px){
     .articulos{
         flex-direction: column;
     }
-    .texto-principal{
-        height: 450px;
-      
-    }
+   
     .texto-principal{
         margin-left: 2px;
+       
     }
     .lista-precios{
     
