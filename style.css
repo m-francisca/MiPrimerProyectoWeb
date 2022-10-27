@@ -371,6 +371,17 @@ label{
         height: 450px;
       
     }
+    .texto-principal{
+        margin-left: 2px;
+    }
+    .lista-precios{
+    
+        margin-right: 50px;
+ 
+     }
+     .variedad{
+         margin-left: 50px;
+     }
     
 }
 @media all and (max-width:650px) {
@@ -402,6 +413,9 @@ label{
      .variedad{
          margin-left: 50px;
      }
+     .texto-principal{
+        margin-left: 2px;
+    }
 
 } 
     html, body {
