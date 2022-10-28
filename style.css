@@ -89,7 +89,7 @@ a{
             height: 280px;
             display: flex;
             align-items: center;
-            margin-left: 700px;
+            margin-left: 790px;
         }
 
 
@@ -410,6 +410,7 @@ label{
 
       .texto-principal{
         margin-left: 2px;
+        margin-bottom: 25px;
         
     }
     .lista-precios{
@@ -420,11 +421,10 @@ label{
      .variedad{
          margin-left: 50px;
      }
-   
-} 
+
+}
     html, body {
     max-width: 100% !important;
-    overflow-x: hidden !important;
-   
+    overflow-x: hidden !important; 
     
 }
